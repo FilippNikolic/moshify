@@ -580,3 +580,43 @@ a{
     max-height: 100vh;
     opacity: 1;
 }
+
+/* Bloks */
+
+.blok{
+    --padding-vertical:6rem;
+    padding: var(--padding-vertical) 2rem;
+}
+
+.block__header{
+    text-align: center;
+}
+
+.blok__heading{
+    margin-top: 0;
+}
+
+.blok--dark{
+    background: #000;
+    color: #7b858b;
+
+}
+
+.blok--dark .blok__heading{
+    color: #fff;
+}
+
+.blok--skewed-right{
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+}
+
+.blok--skewed-left{
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
